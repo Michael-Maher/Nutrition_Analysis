@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="koo-lo-10N">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nutrition Analysis-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Nutrition_Analysis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYB-uT-KTi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cq7-3Q-yGo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderImage" translatesAutoresizingMaskIntoConstraints="NO" id="5hZ-Y3-9Bj">
+                                                <rect key="frame" x="-2" y="20" width="418" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="siC-Qv-SzZ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wlA-9K-0nd">
+                                                <rect key="frame" x="18" y="29.5" width="378" height="71.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter an ingredient list list for what you are cooking, like &quot;1 cup rice, 10 oz chickpeas&quot;, etc." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXa-3w-7WL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Enter each ingredient on a new line" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4U-Zf-w7P">
+                                                        <rect key="frame" x="0.0" y="51" width="378" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sA2-wO-QpN">
+                                                <rect key="frame" x="18" y="140" width="378" height="504"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Rqj-Ce-KDi"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Nsh-hm-iDa"/>
+                                                </connections>
+                                            </textView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="N8h-g2-P0N">
+                                                <rect key="frame" x="18" y="674" width="378" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeY-nG-Ww2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="40"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Analysis">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="disabled">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVX-ce-Arl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="40"/>
+                                                        <state key="normal" title="New Recipe"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                <size key="value" width="0.0" height="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                <real key="value" value="0.59999999999999998"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Ref-rE-cmt"/>
+                                                </constraints>
+                                            </stackView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jqe-xa-JC4">
+                                                <rect key="frame" x="18" y="754" width="378" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="um6-tD-FKj"/>
+                                                </constraints>
+                                            </tableView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxl-1T-rOE">
+                                                <rect key="frame" x="18" y="764" width="378" height="0.0"/>
+                                                <color key="backgroundColor" red="0.17254901959999999" green="0.6588235294" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="wT9-9J-sXe"/>
+                                                </constraints>
+                                                <state key="normal" title="Total nutrition">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="wlA-9K-0nd" firstAttribute="trailing" secondItem="5hZ-Y3-9Bj" secondAttribute="trailing" constant="-20" id="3D1-34-LXm"/>
+                                            <constraint firstItem="5hZ-Y3-9Bj" firstAttribute="top" secondItem="cq7-3Q-yGo" secondAttribute="top" constant="20" id="8tN-Tk-KMC"/>
+                                            <constraint firstItem="zxl-1T-rOE" firstAttribute="leading" secondItem="jqe-xa-JC4" secondAttribute="leading" id="Dfz-XO-aMe"/>
+                                            <constraint firstItem="5hZ-Y3-9Bj" firstAttribute="leading" secondItem="cq7-3Q-yGo" secondAttribute="leadingMargin" constant="-10" id="Hqj-vY-9Pu"/>
+                                            <constraint firstItem="zxl-1T-rOE" firstAttribute="trailing" secondItem="jqe-xa-JC4" secondAttribute="trailing" id="RnP-rW-7dh"/>
+                                            <constraint firstItem="jqe-xa-JC4" firstAttribute="trailing" secondItem="N8h-g2-P0N" secondAttribute="trailing" id="U0y-KT-tX5"/>
+                                            <constraint firstItem="sA2-wO-QpN" firstAttribute="trailing" secondItem="wlA-9K-0nd" secondAttribute="trailing" id="YYb-Ma-55c"/>
+                                            <constraint firstItem="wlA-9K-0nd" firstAttribute="leading" secondItem="5hZ-Y3-9Bj" secondAttribute="leading" constant="20" id="a1r-Mx-qhb"/>
+                                            <constraint firstItem="sA2-wO-QpN" firstAttribute="leading" secondItem="wlA-9K-0nd" secondAttribute="leading" id="f8b-eb-CwL"/>
+                                            <constraint firstItem="zxl-1T-rOE" firstAttribute="top" secondItem="jqe-xa-JC4" secondAttribute="bottom" constant="10" id="gso-gT-O9D"/>
+                                            <constraint firstItem="N8h-g2-P0N" firstAttribute="leading" secondItem="sA2-wO-QpN" secondAttribute="leading" id="hWM-qd-G5h"/>
+                                            <constraint firstItem="N8h-g2-P0N" firstAttribute="top" secondItem="sA2-wO-QpN" secondAttribute="bottom" constant="30" id="iFK-BC-r8i"/>
+                                            <constraint firstItem="sA2-wO-QpN" firstAttribute="top" secondItem="5hZ-Y3-9Bj" secondAttribute="bottom" constant="30" id="irN-tB-b37"/>
+                                            <constraint firstItem="jqe-xa-JC4" firstAttribute="leading" secondItem="N8h-g2-P0N" secondAttribute="leading" id="jxA-va-fCZ"/>
+                                            <constraint firstItem="jqe-xa-JC4" firstAttribute="top" secondItem="N8h-g2-P0N" secondAttribute="bottom" constant="40" id="kHj-zO-WeY"/>
+                                            <constraint firstItem="wlA-9K-0nd" firstAttribute="centerY" secondItem="5hZ-Y3-9Bj" secondAttribute="centerY" id="m82-QG-brJ"/>
+                                            <constraint firstItem="N8h-g2-P0N" firstAttribute="trailing" secondItem="sA2-wO-QpN" secondAttribute="trailing" id="prE-uX-Uzv"/>
+                                            <constraint firstAttribute="bottom" secondItem="zxl-1T-rOE" secondAttribute="bottom" constant="10" id="ydr-Y0-vUo"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="5hZ-Y3-9Bj" secondAttribute="trailing" constant="-10" id="yfo-LO-nfO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cq7-3Q-yGo" firstAttribute="top" secondItem="ZYB-uT-KTi" secondAttribute="top" id="1Cd-08-wWU"/>
+                                    <constraint firstItem="cq7-3Q-yGo" firstAttribute="leading" secondItem="ZYB-uT-KTi" secondAttribute="leading" id="nb7-en-V2i"/>
+                                    <constraint firstItem="cq7-3Q-yGo" firstAttribute="width" secondItem="ZYB-uT-KTi" secondAttribute="width" id="rf0-GZ-LBm"/>
+                                    <constraint firstAttribute="bottom" secondItem="cq7-3Q-yGo" secondAttribute="bottom" id="s9f-zb-iUQ"/>
+                                    <constraint firstItem="cq7-3Q-yGo" firstAttribute="height" secondItem="ZYB-uT-KTi" secondAttribute="height" priority="250" id="wtQ-on-L91"/>
+                                    <constraint firstAttribute="trailing" secondItem="cq7-3Q-yGo" secondAttribute="trailing" id="xES-ao-IWT"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="WoB-5u-2dT"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="frg-gN-lJI"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZYB-uT-KTi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7bz-qF-hV8"/>
+                            <constraint firstAttribute="trailing" secondItem="ZYB-uT-KTi" secondAttribute="trailing" id="LLX-SF-qsu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZYB-uT-KTi" secondAttribute="bottom" id="X27-Yz-RF8"/>
+                            <constraint firstItem="ZYB-uT-KTi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jaG-Bh-iSf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nutrition Analysis" id="dRd-tW-6rf"/>
+                    <connections>
+                        <outlet property="analyzeBtn" destination="eeY-nG-Ww2" id="b4Z-X2-EEQ"/>
+                        <outlet property="ingredientsTableView" destination="jqe-xa-JC4" id="Ks9-7r-Euz"/>
+                        <outlet property="newRecipeBtn" destination="ZVX-ce-Arl" id="AIw-hY-eqM"/>
+                        <outlet property="recipeTextView" destination="sA2-wO-QpN" id="Tvd-1f-iAJ"/>
+                        <outlet property="scrollView" destination="ZYB-uT-KTi" id="ih5-1g-Lhf"/>
+                        <outlet property="tableViewHeight" destination="um6-tD-FKj" id="6aJ-qS-lyz"/>
+                        <outlet property="totalBtnHeightConstraint" destination="wT9-9J-sXe" id="89u-3H-FhS"/>
+                        <outlet property="totalNutritionBtn" destination="zxl-1T-rOE" id="lHe-7I-fas"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="77.678571428571431"/>
+        </scene>
+        <!--Total Nutrition View Controller-->
+        <scene sceneID="CB6-lO-xt6">
+            <objects>
+                <viewController storyboardIdentifier="TotalNutritionViewController" id="995-AI-0oK" customClass="TotalNutritionViewController" customModule="Nutrition_Analysis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JRQ-DW-wjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rMf-kD-Lfd">
+                                <rect key="frame" x="0.0" y="64" width="414" height="798"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HWF-j8-5QO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rMf-kD-Lfd" firstAttribute="leading" secondItem="HWF-j8-5QO" secondAttribute="leading" id="7z5-eU-MHc"/>
+                            <constraint firstItem="rMf-kD-Lfd" firstAttribute="top" secondItem="HWF-j8-5QO" secondAttribute="top" constant="20" id="B9e-g6-g5M"/>
+                            <constraint firstItem="HWF-j8-5QO" firstAttribute="trailing" secondItem="rMf-kD-Lfd" secondAttribute="trailing" id="CYu-fS-rP1"/>
+                            <constraint firstItem="HWF-j8-5QO" firstAttribute="bottom" secondItem="rMf-kD-Lfd" secondAttribute="bottom" id="abZ-Rs-Cgk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nutritionFactsTableView" destination="rMf-kD-Lfd" id="5qp-8I-Yt0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2h-np-oPI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875" y="78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UeV-e6-4fe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="koo-lo-10N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="feR-xM-1xa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IGi-Dc-3LV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFM-n5-54x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HeaderImage" width="354" height="245"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

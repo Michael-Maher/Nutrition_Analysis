@@ -2,7 +2,7 @@
 //  Nutrition_AnalysisUITests.swift
 //  Nutrition_AnalysisUITests
 //
-//  Created by MacBook on 5/4/21.
+//  Created by Michael Maher on 5/4/21.
 //
 
 import XCTest

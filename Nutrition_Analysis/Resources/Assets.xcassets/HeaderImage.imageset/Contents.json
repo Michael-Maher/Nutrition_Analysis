@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Balanced-Diet-for-Vegetarians.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Balanced-Diet-for-Vegetarians@2x.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Balanced-Diet-for-Vegetarians@3x.jpeg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
