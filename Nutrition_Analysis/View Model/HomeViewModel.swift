@@ -9,6 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+// Error Type
 enum CustomError {
     case underlyingError(Error)
     case errorInSpecificIngr(String)
@@ -19,11 +20,7 @@ class HomeViewModel {
     private let disposeBag = DisposeBag()
     
     var analysisSubject = BehaviorRelay<Analysis?>(value: nil)
-//    var analysis: Driver<Analysis?> {
-//        return analysisSubject
-//            .asDriver(onErrorJustReturn: nil)
-//    }
-    
+
     private let ingredientsSubject = PublishSubject<[Ingredients]>()
     var ingredients: Driver<[Ingredients]> {
         return ingredientsSubject
@@ -47,14 +44,8 @@ class HomeViewModel {
         return searchSubject.asObserver()
     }
     
-    private let isEnabledAnalysisBtn = PublishSubject<Bool>()
-    var isEnabledAnalysisBtnObserver: Driver<Bool> {
-        return isEnabledAnalysisBtn
-                    .asDriver(onErrorJustReturn: false)
-    }
-    
     init() {
-        // 1
+
         searchSubject
             .asObservable()
             .filter { !$0.isEmpty }
@@ -90,13 +81,10 @@ class HomeViewModel {
                             let errorMsg = "We cannot calculate the nutrition for some ingredients.\nPlease check the ingredient spelling or if you have entered a quantities for the ingredients."
                             self.errorSubject.onNext(CustomError.errorInSpecificIngr(errorMsg))
                         }
-                        //                        loadedCorrectlyIngrs.insert(Ingredients(text: "", parsed: []), at: 0)
                         self.ingredientsSubject.onNext(loadedCorrectlyIngrs)
                     }
                 }
             })
             .disposed(by: disposeBag)
-        
-        
     }
 }

@@ -70,6 +70,10 @@ extension NutritionAnalysisProvider: TargetType {
         return headers
     }
     
+    
+    //======================
+    //MARK: Sample data
+    //======================
     var sampleData: Data {
         return Data()
     }

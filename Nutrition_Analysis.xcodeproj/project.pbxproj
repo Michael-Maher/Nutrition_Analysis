@@ -26,7 +26,6 @@
 		FAE2E79B2641C1330044E47B /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2E7762641C1300044E47B /* Analysis.swift */; };
 		FAE2E7BD2641C3140044E47B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2E7BC2641C3140044E47B /* HomeViewModel.swift */; };
 		FAE2E7D42641CA070044E47B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2E7D32641CA070044E47B /* UIView.swift */; };
-		FAE2E7E82641CC710044E47B /* ContentSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2E7E72641CC710044E47B /* ContentSizedTableView.swift */; };
 		FAE2E7F12641EA270044E47B /* IngredientDetailsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2E7EF2641EA270044E47B /* IngredientDetailsTableCell.swift */; };
 		FAE2E7F22641EA270044E47B /* IngredientDetailsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE2E7F02641EA270044E47B /* IngredientDetailsTableCell.xib */; };
 		FAE2E7F82641EA530044E47B /* ReusingIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2E7F72641EA530044E47B /* ReusingIdentifier.swift */; };
@@ -86,7 +85,6 @@
 		FAE2E7762641C1300044E47B /* Analysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		FAE2E7BC2641C3140044E47B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FAE2E7D32641CA070044E47B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		FAE2E7E72641CC710044E47B /* ContentSizedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSizedTableView.swift; sourceTree = "<group>"; };
 		FAE2E7EF2641EA270044E47B /* IngredientDetailsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientDetailsTableCell.swift; sourceTree = "<group>"; };
 		FAE2E7F02641EA270044E47B /* IngredientDetailsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientDetailsTableCell.xib; sourceTree = "<group>"; };
 		FAE2E7F72641EA530044E47B /* ReusingIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusingIdentifier.swift; sourceTree = "<group>"; };
@@ -278,7 +276,6 @@
 			isa = PBXGroup;
 			children = (
 				FAE2E7D32641CA070044E47B /* UIView.swift */,
-				FAE2E7E72641CC710044E47B /* ContentSizedTableView.swift */,
 				FAE2E7F72641EA530044E47B /* ReusingIdentifier.swift */,
 				FA1D7D972643004400A21EDB /* AlertsManger.swift */,
 				FA1D7D9C2643294C00A21EDB /* String.swift */,
@@ -552,7 +549,6 @@
 				FAE2E6FD264182660044E47B /* HomeViewController.swift in Sources */,
 				FAE2E7F82641EA530044E47B /* ReusingIdentifier.swift in Sources */,
 				FAE2E7BD2641C3140044E47B /* HomeViewModel.swift in Sources */,
-				FAE2E7E82641CC710044E47B /* ContentSizedTableView.swift in Sources */,
 				FAF277F1264F205800862E42 /* TotalNutritionViewController.swift in Sources */,
 				FAE2E7FD264200BD0044E47B /* IngredientDetailsViewModel.swift in Sources */,
 				FA655C5D265050730010254E /* Loader.swift in Sources */,

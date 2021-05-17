@@ -11,10 +11,7 @@ import RxSwift
 class IngredientDetailsViewModel: NSObject {
     
     var ingr: Ingredients?
-//    var isHeaderCell: Bool {
-//        return ingr?.text?.isEmpty ?? true
-//    }
-    
+
     var parsedIngr: Ingredient? {
         return ingr?.parsed?.first
     }
