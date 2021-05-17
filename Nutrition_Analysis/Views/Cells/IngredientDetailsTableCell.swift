@@ -24,12 +24,7 @@ class IngredientDetailsTableCell: UITableViewCell {
     //MARK:- Variables
     //===================
     var ingredientDetailsViewModel: IngredientDetailsViewModel!
-//    var isHeaderCell: Bool {
-//        didSet {
-//            if isHeaderCell
-//        }
-//    }
-    
+
     //===================
     //MARK:- Methods
     //===================
@@ -48,7 +43,7 @@ class IngredientDetailsTableCell: UITableViewCell {
         separatorLine.isHidden = true
     }
     
-    func configureHeader() {
+    func configureHeader() { // Configure cell as header view
         quantityLabel.text = "Qty"
         unitLabel.text = "Unit"
         foodLabel.text = "Food"

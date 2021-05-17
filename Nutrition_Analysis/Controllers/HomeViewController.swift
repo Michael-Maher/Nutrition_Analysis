@@ -148,6 +148,11 @@ class HomeViewController: UIViewController {
             .debounce(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .map({ text in
+                // Analyze btn will be enabled when :
+                // 1. Number of characters >= 3
+                // 2. text start with number at the beginning
+                // EX: 1 cup rice >> is accepted,
+                //           rice >> not accepted
                  return text.hasMinimumNumberOfLetters(3) && text.isOnlyNumbers
             })
            

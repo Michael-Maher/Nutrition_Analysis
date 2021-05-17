@@ -1,5 +1,5 @@
 //
-//  UIView + IBDesignable.swift
+//  UIView.swift
 //  Nutrition_Analysis
 //
 //  Created by Michael Maher on 5/4/21.
@@ -9,14 +9,14 @@ import UIKit
 
 extension UIView {
     
-    func addFadeShadow() {
+    func addFadeShadow() { // Add fade shadow to view
         self.layer.shadowRadius = 2
         self.layer.shadowOffset = .zero
         self.layer.shadowOpacity = 0.6
         self.layer.masksToBounds = false
     }
     
-    func addCornersAndBorders(radius: CGFloat, borderColor: UIColor? = nil, borderWidth: CGFloat? = nil) {
+    func addCornersAndBorders(radius: CGFloat, borderColor: UIColor? = nil, borderWidth: CGFloat? = nil) { // handle corner radius and borders
         if let borderWidth = borderWidth {
             self.layer.borderWidth = borderWidth
         }
@@ -28,6 +28,7 @@ extension UIView {
         self.clipsToBounds = true
     }
     
+    // Handle corner radius and shadow in storyboard
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
