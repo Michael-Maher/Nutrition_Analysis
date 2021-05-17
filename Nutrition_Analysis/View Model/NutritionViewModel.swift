@@ -10,7 +10,6 @@ import RxCocoa
 import RxSwift
 
 
-
 class NutritionViewModel {
     
     private let disposeBag = DisposeBag()
